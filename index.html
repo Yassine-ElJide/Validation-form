@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Form Validation</title>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Sign In</h1>
+		</header>
+		<form class="form" id="form">
+			<div class="form-control">
+				<label for="">Username</label>
+				<input type="text" placeholder="Your username..." class="username success">
+				<i class="fas fa-exclamation-circle"></i>
+				<i class="fas fa-check-circle"></i>
+				<p id="message">Error message</p>
+			</div>
+			<div class="form-control">
+				<label for="">Email</label>
+				<input type="email" placeholder="Your email..." class="email">
+				<i class="fas fa-exclamation-circle"></i>
+				<i class="fas fa-check-circle"></i>
+				<p id="message">Error message</p>
+			</div>
+			<div class="form-control">
+				<label for="">Password</label>
+				<input type="password" placeholder="Your Password..." class="password">
+				<i class="fas fa-exclamation-circle"></i>
+				<i class="fas fa-check-circle"></i>
+				<p id="message">Error message</p>
+			</div>
+			<div class="form-control">
+				<label for="">Confirm Your password</label>
+				<input type="password" placeholder="Check Password..." class="confirm-password">
+				<i class="fas fa-exclamation-circle"></i>
+				<i class="fas fa-check-circle"></i>
+				<p id="message">Error message</p>
+			</div>
+			<button id="submit">Submit</button>
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	width:100vw;
+	height:100vh;
+	font-family: 'Roboto', sans-serif;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(45.34deg, #1D2252 5.66%, #72AAFF 50.01%, #00FFFF 94.35%);
+}
+.container{
+	background:linear-gradient(45deg, #2c5364, #4286f4);
+	border-radius: 8px;
+	width:450px;
+	height: auto;
+	box-shadow: 2px 2px 8px #090707,
+				3px 3px 10px #090707;
+}
+header{
+	margin:20px 30px;
+}
+header h1{
+	text-align: center;
+	letter-spacing: 3px;
+	font-weight: bolder;
+
+	color:#00FFFF;
+	text-shadow:1px 1px 10px #00FFFF;
+}
+.form{
+	height: 100%;
+	margin:40px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.form-control{
+	display: flex;
+	flex-direction: column;
+	width:100%;
+	margin:20px 10px;
+	position: relative;
+}
+.form-control label{
+	font-size:1.2rem;
+	color:#00FFFF;
+	text-shadow: 1px 1px 10px #00FFFF;
+	margin:0px 0px 9px 8px;
+	letter-spacing: 3px;
+}
+
+.form-control input{
+	font-family: inherit;
+	padding:3px;
+	font-size: .9rem;
+	border-radius:4px;
+	border-color: transparent;
+}
+.success input{
+	border:3px solid #00adb5;
+}
+.error input{
+	border: 3px solid #FC3A52;
+}
+
+.form-control input:focus{
+	outline:none;
+}
+
+.form-control i{
+	position: absolute;
+	top:46%;
+	right:3%;
+	margin-right:8px;
+	visibility: hidden;
+}
+.success i.fa-check-circle{
+	color:#00adb5;
+	visibility: visible;
+}
+.error i.fa-exclamation-circle{
+	color:#FC3A52;
+	visibility: visible;
+}
+#message{
+	margin-top:8px;
+	margin-right:8px;
+	color:#FC3A52;
+	font-size:.95rem;
+	visibility: hidden;
+	text-align: center;
+	font-weight: 700;
+}
+.error #message{
+	visibility: visible;
+}
+#submit{
+	padding:5px 0px;
+	width:50%;
+	font-family: inherit;
+	background: linear-gradient(45.34deg, #1D2252 5.66%, #72AAFF 50.01%, #00FFFF 94.35%);
+	border-radius: 10px;
+	font-size:.9rem;
+	letter-spacing: 4px;
+	color:#F4FFFD;
+	border-color: transparent;
+	font-weight: bolder;
+}
+#submit:hover{
+	background:linear-gradient(45deg, #2c5364, #4286f4);
+
+}
